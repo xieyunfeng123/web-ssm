@@ -19,19 +19,6 @@
             crossorigin="anonymous"></script>
 </head>
 <body>
-<div class="container">
-    <div style="background: white;height: 50%;width: 400px;margin: 10% auto">
-        <div class="bj_bai">
-            <p class="text-gradient">登录</p>
-            <form action="" method="post">
-                <div><input name="" type="text" class="kuang_txt" placeholder="手机号" id="user_name">
-                </div>
-                <div><input name="" type="text" class="kuang_txt" placeholder="密码" id="user_password">
-                </div>
-                <input name="登录" type="submit" class="btn_zhuce" value="登录" formaction=""${pageContext.request.contextPath }/user/login"">
-            </form>
-        </div>
-    </div>
-</div>
+登录成功
 </body>
 </html>

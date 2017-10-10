@@ -21,12 +21,8 @@ public class LoginController {
     private Logger log = Logger.getLogger(LoginController.class);
     @Resource
     private UserService userService;
-
     @RequestMapping("/login")
     public String login(){
-//        log.info("查询所有用户信息");
-//        List<User> userList = userService.getAllUser();
-//        model.addAttribute("userList",userList);
         return "index";
     }
 }

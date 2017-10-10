@@ -23,7 +23,12 @@ public class UserServiceImpl implements UserService {
     public User getUserById(Long userId) {
         return userDao.selectUserById(userId);
     }
-    
+
+    public User login(String user_phone, String user_pwd) {
+        return userDao.login(user_phone,user_pwd);
+    }
+
+
     public User getUserByPhoneOrEmail(String emailOrPhone, Short state) {
         return userDao.selectUserByPhoneOrEmail(emailOrPhone,state);
     }
