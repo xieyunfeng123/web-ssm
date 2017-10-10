@@ -3,13 +3,13 @@
 
 html{height: 100%;}
 body{
-    width: 100%;
-    height: auto;
+/*    width: 100%;
+    height: auto;*/
     background:url("../images/bj_zhuce.jpg");
-    -webkit-background-size: cover;
+/*    -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: cover;*/
     text-align:center
 }
 
