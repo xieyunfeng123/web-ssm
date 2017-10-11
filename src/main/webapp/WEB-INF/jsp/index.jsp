@@ -17,18 +17,22 @@
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous"></script>
+    <script src="js/login.js"></script>
 </head>
 <body>
 <div class="container">
-    <div style="background: white;height: 50%;width: 400px;margin: 10% auto">
+    <div style="background-color: rgba(255,255,255,0.8);height: 50%;width: 400px;margin: 15% auto; border-radius: 5px;">
         <div class="bj_bai">
             <p class="text-gradient">登录</p>
-            <form action="" method="post">
-                <div><input name="" type="text" class="kuang_txt" placeholder="手机号" id="user_name">
+            <form role="form" onsubmit="return LoginOnClick()">
+                <div style="text-align: center"><input  type="text" class="kuang_txt" placeholder="手机号" id="user_name">
                 </div>
-                <div><input name="" type="text" class="kuang_txt" placeholder="密码" id="user_password">
+                <div  style="text-align: center"><input  type="password" class="kuang_txt" placeholder="密码" id="user_password">
                 </div>
-                <input name="登录" type="submit" class="btn_zhuce" value="登录" formaction=""${pageContext.request.contextPath }/user/login"">
+                <div class="checkbox">
+                    <input type="checkbox"><span style="color: grey">请记住我</span>
+                </div>
+                <input name="登录" type="submit" class="btn_zhuce" value="登录"  >
             </form>
         </div>
     </div>

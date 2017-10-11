@@ -8,7 +8,7 @@ html {
 body {
     /*    width: 100%;
         height: auto;*/
-    background: url("../images/bj_zhuce.jpg");
+    background: url("../images/login_bg.jpg");
     /*    -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -21,32 +21,32 @@ body {
     height: 32px;
     border: 1px solid #dddddd;
     line-height: 32px;
-    padding-left: 5px;
+    padding-left: 10px;
     color: #b1a9a9;
     margin-bottom: 20px
 }
 
 .btn_zhuce {
     width: 236px;
-    height: 33px;
+    height: 35px;
     background: #37b5f9;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 33px;
     text-align: center;
     border: 0px;
     color: #fff;
     border-radius: 3px;
     cursor: pointer;
-    margin: 0px 0px 30px 0px
+    margin: 10px 0px 30px 0px
 }
 
 
 .text-gradient {
-    font-size: 20px;
+    font-size: 22px;
     display: inline-block;
     font-family: '微软雅黑';
-    color: lightseagreen;
-    margin-top: 10px;
+    color: grey;
+    margin-top: 15px;
 }
 
 
