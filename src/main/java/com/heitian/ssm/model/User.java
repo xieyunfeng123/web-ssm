@@ -6,86 +6,83 @@ import java.util.Date;
  * Created by Zhangxq on 2016/7/15.
  */
 public class User {
+    private Integer id;
 
-    private Long id;
-    private String userName;
-    private String userPhone;
-    private String userEmail;
-    private String userPwd;
-    private String pwdSalt;
-    private Date createTime;
-    private Date modifyTime;
-    private Short isDelete;
+    private String username;
 
-    public Long getId() {
+    private String password;
+
+    private Date createtime;
+
+    private Date modifytime;
+
+    private String userimg;
+
+    private String name;
+
+    private Integer isdelete;
+
+    public Integer getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
-    public String getUserName() {
-        return userName;
+    public String getUsername() {
+        return username;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public void setUsername(String username) {
+        this.username = username == null ? null : username.trim();
     }
 
-    public String getUserPhone() {
-        return userPhone;
+    public String getPassword() {
+        return password;
     }
 
-    public void setUserPhone(String userPhone) {
-        this.userPhone = userPhone;
+    public void setPassword(String password) {
+        this.password = password == null ? null : password.trim();
     }
 
-    public String getUserEmail() {
-        return userEmail;
+    public Date getCreatetime() {
+        return createtime;
     }
 
-    public void setUserEmail(String userEmail) {
-        this.userEmail = userEmail;
+    public void setCreatetime(Date createtime) {
+        this.createtime = createtime;
     }
 
-    public String getUserPwd() {
-        return userPwd;
+    public Date getModifytime() {
+        return modifytime;
     }
 
-    public void setUserPwd(String userPwd) {
-        this.userPwd = userPwd;
+    public void setModifytime(Date modifytime) {
+        this.modifytime = modifytime;
     }
 
-    public String getPwdSalt() {
-        return pwdSalt;
+    public String getUserimg() {
+        return userimg;
     }
 
-    public void setPwdSalt(String pwdSalt) {
-        this.pwdSalt = pwdSalt;
+    public void setUserimg(String userimg) {
+        this.userimg = userimg == null ? null : userimg.trim();
     }
 
-    public Date getCreateTime() {
-        return createTime;
+    public String getName() {
+        return name;
     }
 
-    public void setCreateTime(Date createTime) {
-        this.createTime = createTime;
+    public void setName(String name) {
+        this.name = name == null ? null : name.trim();
     }
 
-    public Date getModifyTime() {
-        return modifyTime;
+    public Integer getIsdelete() {
+        return isdelete;
     }
 
-    public void setModifyTime(Date modifyTime) {
-        this.modifyTime = modifyTime;
-    }
-
-    public Short getIsDelete() {
-        return isDelete;
-    }
-
-    public void setIsDelete(Short isDelete) {
-        this.isDelete = isDelete;
+    public void setIsdelete(Integer isdelete) {
+        this.isdelete = isdelete;
     }
 }

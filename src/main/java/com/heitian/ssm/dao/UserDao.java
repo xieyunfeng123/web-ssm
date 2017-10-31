@@ -13,8 +13,19 @@ import java.util.List;
 @Repository
 public interface UserDao {
 
-    User selectUserById(@Param("userId") Long userId);
-    User login(@Param("user_phone") String user_phone,@Param("user_pwd") String  user_pwd);
-    User selectUserByPhoneOrEmail(@Param("emailOrPhone") String emailOrPhone, @Param("state") Short state);
-    List<User> selectAllUser();
+        int deleteByPrimaryKey(Integer id);
+
+        int insert(User record);
+
+        int insertSelective(User record);
+
+        User selectByPrimaryKey(Integer id);
+
+        int updateByPrimaryKeySelective(User record);
+
+        int updateByPrimaryKey(User record);
+
+        User login(User user);
+
+        User selectByUserName(String username);
 }

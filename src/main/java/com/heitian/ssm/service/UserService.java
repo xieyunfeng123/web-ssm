@@ -9,11 +9,17 @@ import java.util.List;
  */
 public interface UserService {
 
-    List<User> getAllUser();
 
-    User getUserByPhoneOrEmail(String emailOrPhone, Short state);
+    int insert(User user);
 
-    User getUserById(Long userId);
+    User login(User user);
 
-    User login(String user_phone,String user_pwd);
+    User selectByUserNmae(String username);
+//    List<User> getAllUser();
+//
+//    User getUserByPhoneOrEmail(String emailOrPhone, Short state);
+//
+//    User getUserById(Long userId);
+//
+//    User login(String user_phone);
 }

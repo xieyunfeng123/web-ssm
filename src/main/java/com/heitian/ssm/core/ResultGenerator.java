@@ -12,6 +12,15 @@ public class ResultGenerator {
                 .setMessage(DEFAULT_SUCCESS_MESSAGE);
     }
 
+    public static Result genSuccessResult(Object data,String userid) {
+        return new Result()
+                .setCode(ResultCode.SUCCESS)
+                .setMessage(DEFAULT_SUCCESS_MESSAGE)
+                .setUserId(userid)
+                .setData(data);
+
+    }
+
     public static Result genSuccessResult(Object data) {
         return new Result()
                 .setCode(ResultCode.SUCCESS)

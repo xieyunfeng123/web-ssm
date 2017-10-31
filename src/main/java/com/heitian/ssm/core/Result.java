@@ -10,6 +10,10 @@ public class Result {
     private String message;
     private Object data;
 
+    private String userId;
+
+
+
     public Result setCode(ResultCode resultCode) {
         this.code = resultCode.code;
         return this;
@@ -35,6 +39,15 @@ public class Result {
 
     public Object getData() {
         return data;
+    }
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public Result setUserId(String userId) {
+        this.userId = userId;
+        return this;
     }
 
     public Result setData(Object data) {

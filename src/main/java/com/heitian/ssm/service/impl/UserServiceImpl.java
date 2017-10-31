@@ -4,8 +4,6 @@ import com.heitian.ssm.dao.UserDao;
 import com.heitian.ssm.model.User;
 import com.heitian.ssm.service.UserService;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-
 import javax.annotation.Resource;
 import java.util.List;
 
@@ -14,26 +12,42 @@ import java.util.List;
  */
 
 @Service
-@Transactional(rollbackFor = Exception.class)
 public class UserServiceImpl implements UserService {
     
     @Resource
     private UserDao userDao;
 
-    public User getUserById(Long userId) {
-        return userDao.selectUserById(userId);
+    @Override
+    public int insert(User user) {
+        return userDao.insert(user);
     }
 
-    public User login(String user_phone, String user_pwd) {
-        return userDao.login(user_phone,user_pwd);
+    @Override
+    public User login(User user) {
+//        return userDao.login(user);
+        return userDao.login(user);
+    }
+
+    @Override
+    public User selectByUserNmae(String username) {
+        return userDao.selectByUserName(username);
     }
 
 
-    public User getUserByPhoneOrEmail(String emailOrPhone, Short state) {
-        return userDao.selectUserByPhoneOrEmail(emailOrPhone,state);
-    }
-    
-    public List<User> getAllUser() {
-        return userDao.selectAllUser();
-    }
+//    public User getUserById(Long userId) {
+//        return userDao.selectUserById(userId);
+//    }
+//
+//    public User login(String user_phone) {
+//        return userDao.login(user_phone);
+//    }
+//
+//
+//    public User getUserByPhoneOrEmail(String emailOrPhone, Short state) {
+//        return userDao.selectUserByPhoneOrEmail(emailOrPhone,state);
+//    }
+//
+//    public List<User> getAllUser() {
+//        return userDao.selectAllUser();
+//    }
 }

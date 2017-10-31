@@ -59,9 +59,10 @@
         <url-pattern>/</url-pattern>
     </servlet-mapping>
 
+<!--    &lt;!&ndash; 设置启示页的网页 &ndash;&gt;
     <welcome-file-list>
-        <welcome-file>/index.jsp</welcome-file>
-    </welcome-file-list>
+        <welcome-file>/WEB-INF/jsp/index.jsp</welcome-file>
+    </welcome-file-list>-->
 
     <!-- session配置 -->
     <session-config>
